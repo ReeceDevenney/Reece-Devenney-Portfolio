@@ -15,8 +15,37 @@
 
 header {
   margin: 16px;
+  display: flex;
 }
 
+li {
+  list-style: none;
+  margin: auto 36px;
+  border-bottom: 1px solid var(--accents);
+  background-image: linear-gradient(to top, var(--accents) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out,
+              color 1s ease;
+  color: var(--text1);
+}
+
+li:hover{
+  background-position: bottom;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.callCard {
+  margin: auto 16px;
+  font-size: 48px
+}
 /*
 button {
   all: unset;

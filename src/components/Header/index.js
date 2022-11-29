@@ -1,9 +1,20 @@
 import React from 'react'
+import Nav from '../Nav'
 
-function Header() {
+function Header(props) {
+    const {
+        sections = [],
+        currentSection,
+        setCurrentSection
+    } = props
     return(
         <header>
-            <div>Reece D.</div>
+            <div className='callCard'>RD.</div>
+            <Nav
+            sections={sections}
+            currentSection={currentSection}
+            setCurrentSection={setCurrentSection}
+            ></Nav>
         </header>
     )
 }
