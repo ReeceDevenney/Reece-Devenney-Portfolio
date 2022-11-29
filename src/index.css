@@ -42,6 +42,20 @@ ul {
   margin-right: 0;
 }
 
+footer{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footerImg{
+  display: flex;
+  margin: 32px;
+}
+
 .callCard {
   margin: auto 16px;
   font-size: 48px
