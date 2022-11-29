@@ -4,7 +4,7 @@ function About() {
     return(
        <div>
         <div className="aboutHead">
-            <img src="https://via.placeholder.com/250"></img>
+            <img src="https://via.placeholder.com/250" alt="picutre of Reece Devenney"></img>
             <div className="fullName">
                 <p className="firstName">Reece</p>
                 <p className="lastName">Devenney</p>
