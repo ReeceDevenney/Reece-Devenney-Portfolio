@@ -46,6 +46,44 @@ ul {
   margin: auto 16px;
   font-size: 48px
 }
+
+.aboutHead{
+  display: flex;
+  justify-content: start;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  align-items: left;
+}
+
+.fullName{
+  margin-left: 52px;
+}
+
+.firstName{
+  margin-bottom: 0px;
+  font-size: 84px;
+  font-weight: bold;
+  color: var(--accents);
+}
+
+.lastName{
+  margin-top: 0px;
+  font-size: 84px;
+  font-weight: bold;
+  color: var(--accents);
+}
+
+.aboutText {
+  width:45%;
+  text-align: left;
+  margin: auto;
+}
+
+img {
+  margin: auto 0px;
+}
 /*
 button {
   all: unset;

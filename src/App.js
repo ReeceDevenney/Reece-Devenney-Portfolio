@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header';
+import About from './components/About';
 
 function App() {
   const [sections] = useState([
@@ -20,7 +21,7 @@ const [currentSection, setCurrentSection] = useState(sections[0])
       setCurrentSection={setCurrentSection}
       ></Header>
       <main>
-        Filler Text
+        <About></About>
       </main>
     </div>
   );
