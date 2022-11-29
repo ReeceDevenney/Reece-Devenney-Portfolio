@@ -13,6 +13,9 @@
   font-size: 36px;
 }
 
+main {
+  padding-bottom: 80px;
+}
 header {
   margin: 16px;
   display: flex;
@@ -48,12 +51,13 @@ footer{
   justify-content: center;
   bottom: 0;
   width: 100%;
-
+  overflow: hidden
 }
 
 .footerImg{
   display: flex;
-  margin: 32px;
+  margin: 8px 32px;
+  
 }
 
 .callCard {
@@ -93,6 +97,7 @@ footer{
   width:45%;
   text-align: left;
   margin: auto;
+  overflow-y: visible;
 }
 
 img {
