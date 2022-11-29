@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
+import Mywork from './components/Mywork';
 
 function App() {
   const [sections] = useState([
@@ -12,7 +13,7 @@ function App() {
     {name: 'Contact'}
   ])
 
-const [currentSection, setCurrentSection] = useState(sections[0])
+const [currentSection, setCurrentSection] = useState(sections[1])
 
   return (
     <div>
@@ -22,7 +23,8 @@ const [currentSection, setCurrentSection] = useState(sections[0])
       setCurrentSection={setCurrentSection}
       ></Header>
       <main>
-        <About></About>
+        {currentSection === sections[0] && <About></About>} 
+        {currentSection === sections[1] && <Mywork></Mywork>}
       </main>
       <Footer></Footer>
     </div>
