@@ -4,7 +4,7 @@ function About() {
     return(
        <div>
         <div className="aboutHead">
-            <img src="https://via.placeholder.com/250" alt="picutre of Reece Devenney"></img>
+            <img src={require('../../img/headshot.jpg')} alt="picutre of Reece Devenney" id='headshot'></img>
             <div className="fullName">
                 <p className="firstName">Reece</p>
                 <p className="lastName">Devenney</p>

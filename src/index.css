@@ -100,9 +100,13 @@ footer{
   overflow-y: visible;
 }
 
-img {
+#headshot {
   margin: auto 0px;
+  width: 350px;
+  border-radius: 50%;
 }
+
+
 /*
 button {
   all: unset;
