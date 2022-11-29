@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #1E2749;
+  --secondary: #273469;
+  --accents: #E4D9FF;
+  --text1: #EBEBFF;
+  --test: #353946;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  background-color: var(--primary);
+  color: var(--text1);
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
 }
+
+header {
+  margin: 16px;
+}
+
+/*
+button {
+  all: unset;
+  border: 1px solid var(--accents);
+  border-radius: 4px;
+  color: var(--text1);
+  background-color: var(--primary);
+  transition: color 1s ease, 
+              background-color .75s ease;
+  width: 5rem;
+  text-align: center;
+ 
+}
+
+button:hover {
+  color: var(--primary);
+  background-color: var(--accents);
+  cursor: pointer;
+  background-position: bottom;
+}
+
+.inner {
+  background-image: linear-gradient(to top, var(--accents) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out,
+              color 1s ease;
+  color: var(--text1);
+  width: 5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--accents);
+}
+
+.inner:hover {
+  background-position: bottom;
+  color: var(--primary);
+  cursor: pointer;
+}
+*/
+
+
+
+
+
