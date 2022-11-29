@@ -15,6 +15,7 @@
 
 html{
   background-color: var(--primary);
+  overflow-y: scroll
 }
 svg {
   fill: #E4D9FF99
@@ -157,6 +158,11 @@ margin-right: 16px;
   text-align: left;
   margin: auto;
   overflow-y: visible;
+}
+
+.navActive{
+  background-color: var(--accents);
+  color: var(--primary);
 }
 
 #headshot {
