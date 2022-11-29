@@ -12,6 +12,13 @@
   font-family: 'Playfair Display', serif;
   font-size: 36px;
 }
+svg {
+  fill: #E4D9FF99
+}
+
+svg:hover {
+  fill: var(--accents);
+}
 
 main {
   padding-bottom: 80px;
