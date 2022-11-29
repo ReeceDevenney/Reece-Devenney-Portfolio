@@ -7,7 +7,7 @@ function Mywork() {
             description: 'A social media site for fans of Pokemon to connect',
             live: 'https://dry-wildwood-44635.herokuapp.com/',
             github: 'https://github.com/PDismore/PokeNect',
-            picture: require(`../../img/Mywork/PokeNect.png`)
+            picture: require(`../../img/Mywork/Pokenect.png`)
         },
         {
             name: 'Movie Finder Pro',
