@@ -15,7 +15,8 @@
 
 html{
   background-color: var(--primary);
-  overflow-y: scroll
+  overflow-y: scroll;
+  
 }
 svg {
   fill: #E4D9FF99
