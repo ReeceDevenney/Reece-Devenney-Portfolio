@@ -171,6 +171,15 @@ margin-right: 16px;
   border-radius: 50%;
 }
 
+#resumeNav{
+  color: var(--text1);
+  transition: color 1s ease;
+}
+
+#resumeNav:hover{
+  color: var(--primary);
+}
+
 
 /*
 button {

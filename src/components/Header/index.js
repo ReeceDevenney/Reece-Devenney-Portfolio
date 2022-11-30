@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../Nav'
+import pdf from '../../assets/Resume.pdf'
 
 function Header(props) {
     const {
@@ -9,7 +10,7 @@ function Header(props) {
     } = props
     return(
         <header>
-            <div className='callCard'>RD.</div>
+            <a href={pdf} target="_blank"><div className='callCard'>RD.</div></a>
             <Nav
             sections={sections}
             currentSection={currentSection}

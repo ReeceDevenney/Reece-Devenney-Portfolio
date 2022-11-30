@@ -13,7 +13,7 @@ function App() {
     {name: 'Contact'}
   ])
 
-const [currentSection, setCurrentSection] = useState(sections[1])
+const [currentSection, setCurrentSection] = useState(sections[0])
 
   return (
     <div>

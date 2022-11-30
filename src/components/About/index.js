@@ -11,7 +11,7 @@ function About() {
             </div>
         </div>
         <p className="aboutText">
-           I am a full stack web developer, NCSU Graduate, and Eagle Scout based out of Charlotte, NC. I am excited to be able to bring my skills to your company!
+           Full stack web developer, NCSU Graduate, and Eagle Scout based out of Charlotte, NC. I am excited to be able to bring my skills to your company!
         </p>
        </div>
     )
