@@ -10,7 +10,7 @@ function Header(props) {
     } = props
     return(
         <header>
-            <a href={pdf} target="_blank"><div className='callCard'>RD.</div></a>
+            <div className='callCard'>RD.</div>
             <Nav
             sections={sections}
             currentSection={currentSection}
