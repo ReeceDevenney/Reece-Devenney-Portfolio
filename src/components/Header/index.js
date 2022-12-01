@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from '../Nav'
-import pdf from '../../assets/Resume.pdf'
 
 function Header(props) {
     const {
