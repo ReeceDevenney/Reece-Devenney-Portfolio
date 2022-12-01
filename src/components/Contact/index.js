@@ -33,6 +33,9 @@ function Contact() {
         }
     }
 
+    function handleSubmit(e)  {
+        e.preventDefault()
+    }
     return (
         <section id='contact'>
             <h1 id='contact-title'>Contact me</h1>
@@ -54,7 +57,7 @@ function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button type="submit" onClick={handleSubmit}>Submit</button>
             </form>
         </section>
     )
