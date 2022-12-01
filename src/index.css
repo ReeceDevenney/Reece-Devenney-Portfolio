@@ -16,8 +16,12 @@
 html{
   background-color: var(--primary);
   overflow-y: scroll;
-  
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 svg {
   fill: #E4D9FF99
 }
@@ -87,6 +91,55 @@ a {
 
 p{
   margin: 8px;
+}
+
+textarea {
+  height: 300px;
+  margin-top: 16px;
+}
+
+input {
+height: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--primary) inset !important;
+    box-shadow: 0 0 0 30px var(--primary) inset !important;
+    -webkit-text-fill-color: var(--text1);
+}
+
+textarea, input {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none; 
+  background-color: var(--primary);
+  border: 1px solid var(--text1);
+  border-radius: 8px;
+  width: 80%;
+  font-size: 18px;
+}
+
+button {
+  all: unset;
+  border: 1px solid var(--accents);
+  color: var(--text1);
+  background-color: var(--primary);
+  transition: color 1s ease, 
+              background-color .75s ease;
+  width: 5rem;
+  text-align: center;
+ 
+}
+
+button:hover {
+  color: var(--primary);
+  background-color: var(--accents);
+  cursor: pointer;
+  background-position: bottom;
 }
 
 .project {
@@ -209,54 +262,7 @@ margin-right: 16px;
   font-size: 60px;
 }
 
-textarea {
-  height: 300px;
-  margin-top: 16px;
-}
 
-input {
-height: auto;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px var(--primary) inset !important;
-    box-shadow: 0 0 0 30px var(--primary) inset !important;
-    -webkit-text-fill-color: var(--text1);
-}
-
-textarea, input {
-  border: none;
-  overflow: auto;
-  outline: none;
-  resize: none; 
-  background-color: var(--primary);
-  border: 1px solid var(--text1);
-  border-radius: 8px;
-  width: 80%;
-  font-size: 18px;
-}
-
-button {
-  all: unset;
-  border: 1px solid var(--accents);
-  color: var(--text1);
-  background-color: var(--primary);
-  transition: color 1s ease, 
-              background-color .75s ease;
-  width: 5rem;
-  text-align: center;
- 
-}
-
-button:hover {
-  color: var(--primary);
-  background-color: var(--accents);
-  cursor: pointer;
-  background-position: bottom;
-}
 
 
 
