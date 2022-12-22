@@ -3,6 +3,13 @@ import React, { useState } from "react";
 function Mywork() {
     const [projects] = useState([
         {
+            name: 'Arij',
+            description: 'A task managment site',
+            live: 'https://pacific-cliffs-88620.herokuapp.com/',
+            github: 'https://github.com/Jstelzl/arij',
+            picture: require(`../../img/Mywork/Arij.png`)
+        },
+        {
             name: 'PokeNect',
             description: 'A social media site for fans of Pokemon to connect',
             live: 'https://dry-wildwood-44635.herokuapp.com/',
@@ -36,13 +43,6 @@ function Mywork() {
             live: 'https://stark-chamber-69180.herokuapp.com/',
             github: 'https://github.com/ReeceDevenney/contact-card',
             picture: require(`../../img/Mywork/contact-cards.png`)
-        },
-        {
-            name: 'Flashcard Quiz',
-            description: 'Flashcard game to test web developer knowledge',
-            live: 'https://reecedevenney.github.io/Flashcard-Quiz/',
-            github: 'https://github.com/ReeceDevenney/Flashcard-Quiz',
-            picture: require(`../../img/Mywork/flashcard.png`)
         },
     ])
     return (

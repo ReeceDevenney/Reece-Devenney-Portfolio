@@ -198,6 +198,7 @@ margin-right: 16px;
   margin-bottom: 24px;
   width: 45%;
   align-items: left;
+  justify-content: center;
 }
 
 .fullName{
