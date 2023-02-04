@@ -9,7 +9,7 @@ function Header(props) {
     } = props
     return(
         <header>
-            <div className='callCard'>RD.</div>
+            <div className='text-xl text-orange mt-2 ml-6'>RD.</div>
             <Nav
             sections={sections}
             currentSection={currentSection}
