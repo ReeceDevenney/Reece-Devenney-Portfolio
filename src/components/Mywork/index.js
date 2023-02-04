@@ -15,35 +15,8 @@ function Mywork() {
             live: 'https://dry-wildwood-44635.herokuapp.com/',
             github: 'https://github.com/PDismore/PokeNect',
             picture: require(`../../img/Mywork/Pokenect.png`)
-        },
-        {
-            name: 'Movie Finder Pro',
-            description: 'Find new movies using the ones you know',
-            live: 'https://reecedevenney.github.io/Movie-Finder-Pro/',
-            github: 'https://github.com/ReeceDevenney/Movie-Finder-Pro',
-            picture: require(`../../img/Mywork/movie-finder.png`)
-        },
-        {
-            name: 'JATE',
-            description: 'PWA text editor',
-            live: 'https://immense-ridge-74412.herokuapp.com/',
-            github: 'https://github.com/ReeceDevenney/pwa-homework',
-            picture: require(`../../img/Mywork/JATE.png`)
-        },
-        {
-            name: 'Note Taker',
-            description: 'An express app to take notes',
-            live: 'https://frozen-ravine-39398.herokuapp.com/',
-            github: 'https://github.com/ReeceDevenney/note-taker',
-            picture: require(`../../img/Mywork/note-taker.png`)
-        },
-        {
-            name: 'Contact Cards',
-            description: 'Website to make contact cards',
-            live: 'https://stark-chamber-69180.herokuapp.com/',
-            github: 'https://github.com/ReeceDevenney/contact-card',
-            picture: require(`../../img/Mywork/contact-cards.png`)
-        },
+        }
+        
     ])
     return (
         <div>
