@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-
+import React, {useState, useRef} from 'react'
+import emailjs from 'emailjs-com';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' })
@@ -33,31 +33,43 @@ function Contact() {
         }
     }
 
-    function handleSubmit(e)  {
-        e.preventDefault()
-    }
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('contact_service', 'contact_form', form.current, '9jcStzq7A8P-L8R8y')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    form.current.reset()
+  };
+
     return (
         <section id='contact'>
             <h1 id='contact-title'>Contact me</h1>
-            <form id="contact-form">
-                <div>
+            <form id="contact-form" ref={form} onSubmit={sendEmail}>
+                    <div>
                     <label htmlFor="name"></label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} placeholder='Name'/>
-                </div>
-                <div>
+                    <input type="text" name="user_name" defaultValue={name} onBlur={handleChange} placeholder='Name'/>
+                    </div>
+                    <div>
                     <label htmlFor="email"></label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} placeholder='email: John.Doe@gmail.com'/>
-                </div>
-                <div>
+                    <input type="email" name="user_email" defaultValue={email} onBlur={handleChange} placeholder='email: John.Doe@gmail.com'/>
+                    </div>
+                    <div>
                     <label htmlFor="message"></label>
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} placeholder='Your message here'/>
-                </div>
+                    </div>
+                
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit" onClick={handleSubmit}>Submit</button>
+                <button type="submit" onClick={sendEmail}>Submit</button>
             </form>
         </section>
     )
