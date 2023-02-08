@@ -45,6 +45,7 @@ function Contact() {
           console.log(error.text);
       });
     form.current.reset()
+    form.current.elements.message.value = ""
   };
 
     return (
