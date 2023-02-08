@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from '../../assets/Resume.pdf'
+import pdf from '../../assets/Reece Devnney Resume_January 2023.pdf'
 
 function Nav(props) {
     const {
@@ -10,7 +10,7 @@ function Nav(props) {
     return(
         <ul>
         {sections.map((section) =>(
-            <li key={section.name} onClick={() => {section.name !== 'Resume' && setCurrentSection(section)}} className={`${'text-orange' && currentSection.name === section.name && 'navActive'}`}>
+            <li key={section.name} onClick={() => {section.name !== 'Resume' && setCurrentSection(section)}} className={`${currentSection.name === section.name && 'navActive'}`}>
                 {section.name === 'Resume'? (<a href= {pdf} target='_blank' id="resumeNav">{section.name}</a>) : (section.name)}
             </li>
         ))}
