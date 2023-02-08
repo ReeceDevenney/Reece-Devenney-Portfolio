@@ -2,10 +2,10 @@ import React, {useState, useRef} from 'react'
 import emailjs from 'emailjs-com';
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' })
+    const [formState, setFormState] = useState({ user_name: '', user_email: '', message: '' })
     const { name, email, message } = formState;
 
-    const [errorMessage, setErrorMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState(false);
     
     function validateEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -13,32 +13,36 @@ function Contact() {
       }
 
     function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
-        }
     }
+
+    // console.log(e.target.value)
+    //     if (e.target.name === 'user_email') {
+    //         const isValid = validateEmail(e.target.value);
+    //         if (!isValid) {
+    //             setErrorMessage('Your email is invalid.');
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+
+    //     } else {
+    //         if (!e.target.value.length) {
+    //             setErrorMessage(`${e.target.name} is required.`);
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+    //     }
+    //     if (!errorMessage) 
 
     const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('contact_service', 'contact_form', form.current, '9jcStzq7A8P-L8R8y')
+    if (!formState.user_name || !formState.user_email || !formState.message) {
+        setErrorMessage(true)
+        return
+    } else {
+        emailjs.sendForm('contact_service', 'contact_form', form.current, '9jcStzq7A8P-L8R8y')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -46,6 +50,9 @@ function Contact() {
       });
     form.current.reset()
     form.current.elements.message.value = ""
+    setErrorMessage(false)
+    setFormState({ user_name: '', user_email: '', message: '' })
+    }
   };
 
     return (
@@ -67,7 +74,7 @@ function Contact() {
                 
                 {errorMessage && (
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <p className="error-text">Please fill out all feilds</p>
                     </div>
                 )}
                 <button type="submit" onClick={sendEmail}>Submit</button>
