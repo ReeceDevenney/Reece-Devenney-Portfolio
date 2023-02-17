@@ -269,7 +269,17 @@ margin-right: 16px;
 }
 
 
-
+@media screen and (max-width: 1000px) {
+  header {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  ul{
+    flex-direction: column;
+    margin: auto;
+  }
+}
 
 
 
