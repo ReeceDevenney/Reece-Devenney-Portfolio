@@ -48,7 +48,7 @@ h2 {
   text-align: center;
   display: inline-block;
   margin-bottom: 8px;
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h1{
@@ -157,8 +157,8 @@ button:hover {
 }
 
 .projectText {
-width: 200%;
-margin-right: 16px;
+width: 100%;
+margin: auto;
 }
 
 .projectImg {
@@ -239,6 +239,10 @@ margin-right: 16px;
 .error-text {
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+.techUsed{
+  color: #FFAE42;
 }
 
 #headshot {

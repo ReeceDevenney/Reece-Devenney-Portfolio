@@ -4,17 +4,17 @@ function Mywork() {
     const [projects] = useState([
         {
             name: 'Arij',
-            description: 'A task managment site',
+            description: 'A task managment site for teams to creat and track issue tickets',
             live: 'https://pacific-cliffs-88620.herokuapp.com/',
             github: 'https://github.com/Jstelzl/arij',
-            picture: require(`../../img/Mywork/Arij.png`)
+            tech: "Javascript React GraphQL"
         },
         {
             name: 'PokeNect',
-            description: 'A social media site for fans of Pokemon to connect',
+            description: 'A social media site for fans of Pokemon to find and follow other enthusiest, and discuss the game',
             live: 'https://dry-wildwood-44635.herokuapp.com/',
             github: 'https://github.com/PDismore/PokeNect',
-            picture: require(`../../img/Mywork/Pokenect.png`)
+            tech: "Javascript SQL"
         }
         
     ])
@@ -25,9 +25,9 @@ function Mywork() {
                     <div className="projectText">
                         <a href={project.live} target='_blank' rel="noreferrer"><h2>{project.name}</h2></a>
                         <p>{project.description}</p>
+                        <p className="techUsed">{project.tech}</p>
                         <a href={project.github} target='_blank' rel="noreferrer">| Github Repo |</a>
                     </div>
-                    <a className="projectImg" href={project.live} target='_blank' rel="noreferrer"><img src={project.picture} alt='preview of project' className="projectImg2"></img></a>
                 </div>
             ))}
         </div>
