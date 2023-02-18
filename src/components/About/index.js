@@ -11,7 +11,7 @@ function About() {
             </div>
         </div>
         <p className="aboutText">
-        a recent graduate with a strong interest in web design and development. With proficiency in TypeScript, SQL, NoSQL, and React, 
+        A recent graduate with a strong interest in web design and development. With proficiency in TypeScript, SQL, NoSQL, and React, 
         I am eager to make a meaningful impact at your company and contribute to the development of engaging and dynamic web applications.
         </p>
        </div>
