@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from '../../assets/Reece Devnney Resume_January 2023.pdf'
+import pdf from '../../assets/Reece Devnney Resume_February 2023_Updated.pdf'
 
 function Nav(props) {
     const {
