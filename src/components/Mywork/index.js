@@ -26,7 +26,10 @@ function Mywork() {
                         <a href={project.live} target='_blank' rel="noreferrer"><h2>{project.name}</h2></a>
                         <p>{project.description}</p>
                         <p className="techUsed">{project.tech}</p>
-                        <a href={project.github} target='_blank' rel="noreferrer">| Github Repo |</a>
+                        <div>
+                        <a href={project.github} target='_blank' rel="noreferrer"> Github Repo | </a>
+                        <a href={project.live} target='_blank' rel="noreferrer"> Link </a>
+                        </div>
                     </div>
                 </div>
             ))}

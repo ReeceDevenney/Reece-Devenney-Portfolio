@@ -356,6 +356,10 @@ margin: auto;
   #contact {
     width: 80%;
   }
+
+  h2 {
+    font-size: 48px;
+  }
 }
 
 

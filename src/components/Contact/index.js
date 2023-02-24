@@ -6,33 +6,9 @@ function Contact() {
     const { name, email, message } = formState;
 
     const [errorMessage, setErrorMessage] = useState(false);
-    
-    function validateEmail(email) {
-        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-      }
-
     function handleChange(e) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
     }
-
-    // console.log(e.target.value)
-    //     if (e.target.name === 'user_email') {
-    //         const isValid = validateEmail(e.target.value);
-    //         if (!isValid) {
-    //             setErrorMessage('Your email is invalid.');
-    //         } else {
-    //             setErrorMessage('');
-    //         }
-
-    //     } else {
-    //         if (!e.target.value.length) {
-    //             setErrorMessage(`${e.target.name} is required.`);
-    //         } else {
-    //             setErrorMessage('');
-    //         }
-    //     }
-    //     if (!errorMessage) 
 
     const form = useRef();
 
