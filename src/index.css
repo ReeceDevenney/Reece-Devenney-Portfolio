@@ -318,6 +318,7 @@ margin: auto;
 
   .aboutText {
     text-align: center;
+    width:80%;
   }
 
   #headshot{
@@ -326,7 +327,28 @@ margin: auto;
   }
 }
 
+@media screen and (max-width: 480px) {
+  *{
+    font-size: 24px;
+  }
 
+  .firstName{
+    font-size: 36px;
+  }
+
+  .lastName{
+    font-size: 36px;
+  }
+
+  .aboutText {
+    width:80%;
+  }
+
+  .callingCard{
+    margin: auto;
+    width: auto;
+  }
+}
 
 
 
