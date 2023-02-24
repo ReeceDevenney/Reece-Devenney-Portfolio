@@ -325,6 +325,10 @@ margin: auto;
     justify-content: center;
     margin: auto;
   }
+
+  #contact {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -347,6 +351,10 @@ margin: auto;
   .callingCard{
     margin: auto;
     width: auto;
+  }
+
+  #contact {
+    width: 80%;
   }
 }
 
