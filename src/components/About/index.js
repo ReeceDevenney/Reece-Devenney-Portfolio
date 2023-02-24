@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return(
-       <div>
+       <div className="test">
         <div className="aboutHead">
             <img src={require('../../img/headshot.jpg')} alt="picutre of Reece Devenney" id='headshot'></img>
             <div className="fullName">
