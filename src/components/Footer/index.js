@@ -4,10 +4,10 @@ import { ReactComponent as Linkedin } from '../../img/icons/linkedin.svg'
 
 
 function Footer() {
-    return(
+    return (
         <footer>
             <a href="https://github.com/ReeceDevenney" target="_blank" className="footerImg"><Github /></a>
-            <a href="https://www.linkedin.com/in/reece-d-83753520a/" target="_blank" className="footerImg"><Linkedin /></a>
+            <a href="https://www.linkedin.com/in/reecedevenney/" target="_blank" className="footerImg"><Linkedin /></a>
         </footer>
     )
 }
